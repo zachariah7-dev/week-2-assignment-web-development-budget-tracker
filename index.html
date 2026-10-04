@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Budget Tracker | 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="heading">
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/2830/2830284.png"
+                alt="Budget Tracker logo"
+                width="60"
+            >
+            <div>
+                <h1>Budget Tracker</h1>
+                <p>Track your spending. Manage your money.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-container">
+
+        <!-- Add Expense Form -->
+        <section class="container add-expense-section">
+            <h2>Add an Expense</h2>
+            <p>Enter your expense details below.</p>
+
+            <form id="expense-form">
+                <label for="expense-name">Name:</label>
+                <input
+                    type="text"
+                    id="expense-name"
+                    name="expense-name"
+                    placeholder="e.g. Shopping"
+                    required
+                >
+
+                <label for="expense-amount">Amount (KES):</label>
+                <input
+                    type="number"
+                    id="expense-amount"
+                    name="expense-amount"
+                    min="0.01"
+                    step="0.01"
+                    placeholder="e.g. 500"
+                    required
+                >
+
+                <label for="expense-category">Category:</label>
+                <select id="expense-category" name="expense-category" required>
+                    <option value="">Choose a category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="expense-date">Date:</label>
+                <input
+                    type="date"
+                    id="expense-date"
+                    name="expense-date"
+                    required
+                >
+
+                <button type="button" id="add-expense-button">
+                    Add Expense
+                </button>
+            </form>
+        </section>
+
+        <!-- Expenses Table -->
+        <section class="container expenses-section">
+            <h2>My Expenses</h2>
+            <p>Example expenses are shown in the table below.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Amount (KES)</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Breakfast</td>
+                            <td>150.00</td>
+                            <td>Food</td>
+                            <td>2026-10-01</td>
+                        </tr>
+                        <tr>
+                            <td>Bus Fare</td>
+                            <td>100.00</td>
+                            <td>Transport</td>
+                            <td>2026-10-01</td>
+                        </tr>
+                        <tr>
+                            <td>House Rent</td>
+                            <td>5,000.00</td>
+                            <td>Rent</td>
+                            <td>2026-10-02</td>
+                        </tr>
+                        <tr>
+                            <td>Movie Ticket</td>
+                            <td>300.00</td>
+                            <td>Entertainment</td>
+                            <td>2026-10-03</td>
+                        </tr>
+                        <tr>
+                            <td>Soap</td>
+                            <td>200.00</td>
+                            <td>Other</td>
+                            <td>2026-10-04</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Collapsible Instructions -->
+        <section class="container help-section">
+            <details>
+                <summary>How to use this tracker</summary>
+                <ol>
+                    <li>Enter the name of your expense.</li>
+                    <li>Enter the amount in Kenyan shillings (KES).</li>
+                    <li>Choose a category from the dropdown list.</li>
+                    <li>Select the date of the expense.</li>
+                    <li>Click Add Expense to practise using the form.</li>
+                </ol>
+                <p>
+                    Note: The Add Expense button is a placeholder for now.
+                    Saving expenses will be added in a future lesson.
+                </p>
+            </details>
+        </section>
+
+        <!-- Budgeting Video -->
+        <section class="container video-section">
+            <h2>Learn About Budgeting</h2>
+            <p>Watch this video to learn more about managing money.</p>
+
+            <div class="video-wrapper">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/HQzoZfc3GwQ"
+                    title="Personal budgeting and money management video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Budget Tracker. Created for an HTML and CSS assignment.</p>
+    </footer>
+</body>
+</html>
